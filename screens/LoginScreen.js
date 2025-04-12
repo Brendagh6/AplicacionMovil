@@ -30,6 +30,11 @@ const LoginScreen = ({ navigation }) => {
     }
   };
 
+  const handleRegister = () => {
+    // Navegar a UserFormScreen con isEdit: false para crear un nuevo usuario
+    navigation.navigate('UserForm', { isEdit: false });
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Iniciar Sesión</Text>
